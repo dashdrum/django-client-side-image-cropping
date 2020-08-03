@@ -68,6 +68,7 @@ $(document).ready(function($) {
             window.dcsic_wrapper.find("input[type=hidden]").val(r);
             window.dcsic_wrapper.find(".dcsic_current_img").attr('src', r);
             close_dialog();
+            window.document.getElementById("submit").removeAttribute("disabled", false);
             window.dcsic_wrapper.addClass("has_image");
         });
     });
